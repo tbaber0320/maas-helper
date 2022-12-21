@@ -36,10 +36,10 @@ sudo apt-get -qq update
 
 echo  📦 - Installing Docker Engine, ContainerD, Docker Compose...
 
-apt-get install -qq docker-ce > /dev/null
-apt-get install -qq docker-ce-cli > /dev/null
-apt-get install -qq containerd.io > /dev/null
-apt-get install -qq docker-compose-plugin > /dev/null
+sudo apt-get install -qq docker-ce > /dev/null
+sudo apt-get install -qq containerd.io > /dev/null
+sudo apt-get install -qq docker-ce-cli > /dev/null
+sudo apt-get install -qq docker-compose-plugin > /dev/null
 
 echo  🤝 - Adding current user to docker group...
 
@@ -51,17 +51,17 @@ usermod -aG docker $USER
 
 echo  🛠️ - Installing stable postgresql...
 
-apt-get install -y -qq postgresql > /dev/null
+sudo apt-get install -y -qq postgresql > /dev/null
 
 echo  🫰 - Installing snapd
 
-apt-get install -y -qq snapd > /dev/null
+sudo apt-get install -y -qq snapd > /dev/null
 
 # install maas 3.2 via snap
 
 echo  📦 - Installing maas from snap:maas/3.2...
 
-snap install maas
+sudo snap install maas
 
 echo  🔍 - List platform version
 
