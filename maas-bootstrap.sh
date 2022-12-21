@@ -65,6 +65,6 @@ sudo snap install maas
 
 echo  🔍 - List platform version
 
-echo docker = docker --version
-echo postgres = psql --version
-echo maas = snap info maas
+echo docker | docker --version
+echo postgres | psql --version
+echo maas | snap info maas |
