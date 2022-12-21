@@ -1,10 +1,10 @@
 # maas-helper
 
-run `apt install git`
+run `apt install -qq git`
 
 run `git clone https://github.com/tbaber0320/maas-helper.git`
 
-cd into maas-helper dir `cd /maas-helper`
+cd into `cd maas-helper/`
 
 set `maas-bootstrap.sh` as executible - `chmod +x maas-bootstrap.sh`
 
