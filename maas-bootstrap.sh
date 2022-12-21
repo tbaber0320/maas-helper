@@ -1,12 +1,4 @@
 #!/bin/bash
-echo 📁 - Creating helper directories...
-
-# create a directory in the root directory
-mkdir /maas-bootstrap/
-
-# create a subdirectory inside the new directory
-mkdir /maas-bootstrap/helper
-
 echo  📦 - Installing docker dependencies...
 
 # Update package index
@@ -60,6 +52,8 @@ usermod -aG docker $USER
 echo  🛠️ - Installing stable postgresql...
 
 apt-get install -y -qq postgresql > /dev/null
+
+echo  🫰 - Installing snapd
 
 # install maas 3.2 via snap
 
