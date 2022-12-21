@@ -45,7 +45,7 @@ echo  🤝 - Adding current user to docker group...
 
 # Add the current user to the docker group
 
-usermod -aG docker $USER
+sudo usermod -aG docker $USER
 
 # Install the PostgreSQL server and client packages
 
