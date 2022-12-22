@@ -2,7 +2,7 @@
 
 install git if not already installed
 
-  `apt install git`
+  `sudo apt install git`
 
 clone this repo
 
