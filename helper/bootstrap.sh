@@ -45,5 +45,3 @@ sudo apt-get install -qq docker-compose-plugin > /dev/null
 # Add the current user to the docker group
 echo  🤝 - Adding current user to docker group...
 sudo usermod -aG docker $USER
-
-echo  ✅ - Success - proceeding with interactive setup.
