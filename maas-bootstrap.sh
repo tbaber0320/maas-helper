@@ -53,7 +53,7 @@ echo  🛠️ - Installing stable postgresql...
 
 sudo apt-get install -y -qq postgresql > /dev/null
 
-echo  🫰 - Installing snapd
+echo  🫰 - Installing snapd...
 
 sudo apt-get install -y -qq snapd > /dev/null
 
@@ -63,8 +63,4 @@ echo  📦 - Installing maas from snap:maas/3.2...
 
 sudo snap install maas
 
-echo  🔍 - List platform version
-
-echo docker | docker --version
-echo postgres | psql --version
-echo maas | snap info maas |
+echo  ✅ - Success
