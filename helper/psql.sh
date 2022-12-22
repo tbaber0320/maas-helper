@@ -8,7 +8,7 @@ PASSWORD=maas
 DATABASE=maas
 
 # Connect to the default PostgreSQL database
-sudo psql -U postgres <<EOF
+sudo -u postgres psql <<EOF
 
 # Create the new user
 CREATE USER $USERNAME WITH ENCRYPTED PASSWORD '$PASSWORD';
