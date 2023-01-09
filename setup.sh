@@ -10,3 +10,6 @@ echo  ✅ - Success - proceeding with postgres setup...
 ./helper/psql.sh
 echo  ✅ - Success - invoking MaaS regiond + rackd setup
 sudo maas init region+rack --database-uri "postgres://maas:maas@localhost/maas"
+sudo maas createadmin
+
+echo ✅ - Setup completed! Please login to MaaS to continue configuration.
